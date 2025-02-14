@@ -143,6 +143,15 @@ public final class Machines {
             MachineLore.speed(16),
             MachineLore.energyPerSecond(7200)
     );
+    public static final SlimefunItemStack SINFINITY_DUST_EXTRACTOR = new SlimefunItemStack(
+        "SINFINITY_DUST_EXTRACTOR",
+        Material.FURNACE,
+        "&b无尽&8磨粉&2铸锭&8一体机",
+        "&7将圆石变为矿锭",
+        "",
+        MachineLore.speed(16),
+        MachineLore.energyPerSecond(7200)
+    );
     public static final SlimefunItemStack INGOT_FORMER = new SlimefunItemStack(
             "INGOT_FORMER",
             Material.FURNACE,
@@ -485,6 +494,31 @@ public final class Machines {
                 .addRecipe(sixtyFourDust, new ItemStack(Material.DIORITE, 64))
                 .addRecipe(sixtyFourDust, new ItemStack(Material.GRANITE, 64))
                 .ticksPerOutput(1).energyPerTick(7200).register(plugin);
+        //铸锭一体配方
+        RandomizedItemStack sixtyFourSDust = new RandomizedItemStack(
+            new SlimefunItemStack(SlimefunItems.COPPER_INGOT, 32),
+            new SlimefunItemStack(SlimefunItems.ZINC_INGOT, 64),
+            new SlimefunItemStack(SlimefunItems.TIN_INGOT, 64),
+            new SlimefunItemStack(SlimefunItems.ALUMINUM_INGOT, 64),
+            new SlimefunItemStack(SlimefunItems.LEAD_INGOT, 64),
+            new SlimefunItemStack(SlimefunItems.SILVER_INGOT, 64),
+            new SlimefunItemStack(SlimefunItems.MAGNESIUM_INGOT, 64)
+        );
+        new MachineBlock(Groups.INFINITY_CHEAT, SINFINITY_DUST_EXTRACTOR, InfinityWorkbench.TYPE, new ItemStack[] {
+            Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT,
+            Materials.VOID_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_CIRCUIT, Materials.INFINITE_CIRCUIT, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
+            Materials.VOID_INGOT, Materials.INFINITE_INGOT, INFINITY_DUST_EXTRACTOR, INFINITY_DUST_EXTRACTOR, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
+            Materials.VOID_INGOT, Materials.INFINITE_INGOT, DUST_EXTRACTOR, DUST_EXTRACTOR, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
+            Materials.VOID_INGOT, Materials.INFINITE_INGOT, DUST_EXTRACTOR, DUST_EXTRACTOR, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
+            Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT,
+        }).addRecipe(sixtyFourSDust, new ItemStack(Material.COBBLESTONE, 64))
+            .addRecipe(sixtyFourSDust, new ItemStack(Material.ANDESITE, 64))
+            .addRecipe(sixtyFourSDust, new ItemStack(Material.STONE, 64))
+            .addRecipe(sixtyFourSDust, new ItemStack(Material.DIORITE, 64))
+            .addRecipe(sixtyFourSDust, new ItemStack(Material.GRANITE, 64))
+            .ticksPerOutput(1).energyPerTick(7200).register(plugin);
+
+
 
         new MachineBlock(Groups.ADVANCED_MACHINES, COBBLE_PRESS, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
                 Materials.MACHINE_PLATE, Materials.COBBLE_3, Materials.MACHINE_PLATE,
