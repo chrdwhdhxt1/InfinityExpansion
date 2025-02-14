@@ -62,6 +62,15 @@ public final class Quarries {
             MachineLore.speed(64),
             MachineLore.energyPerSecond(36000)
     );
+    public static final SlimefunItemStack SUPER_INFINITY_QUARRY = new SlimefunItemStack(
+        "SUPER_INFINITY_QUARRY",
+        Material.CHISELED_POLISHED_BLACKSTONE,
+        "&b超级无尽矿机",
+        "&7自动挖主世界和下界矿物",
+        "",
+        MachineLore.speed(256),
+        MachineLore.energyPerSecond(360000)
+    );
     public static final double DIAMOND_CHANCE = getOscillatorChance("diamond");
     public static final double REDSTONE_CHANCE = getOscillatorChance("redstone");
     public static final double LAPIS_CHANCE = getOscillatorChance("lapis");
@@ -171,6 +180,14 @@ public final class Quarries {
                 Materials.VOID_INGOT, null, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, null, Materials.VOID_INGOT,
                 Materials.VOID_INGOT, null, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, null, Materials.VOID_INGOT
         }, 64, 1, outputs.toArray(new Material[0])).energyPerTick(36000).register(plugin);
+        new Quarry(Groups.INFINITY_CHEAT, SUPER_INFINITY_QUARRY, InfinityWorkbench.TYPE, new ItemStack[] {
+            null, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, null,
+            Materials.MACHINE_PLATE, Gear.PICKAXE, Materials.INFINITE_CIRCUIT, Materials.INFINITE_CIRCUIT, Gear.PICKAXE, Materials.MACHINE_PLATE,
+            Materials.MACHINE_PLATE, VOID_QUARRY, Materials.INFINITE_CORE, Materials.INFINITE_CORE, VOID_QUARRY, Materials.MACHINE_PLATE,
+            Materials.VOID_INGOT, INFINITY_QUARRY, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, INFINITY_QUARRY, Materials.VOID_INGOT,
+            Materials.VOID_INGOT, null, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, null, Materials.VOID_INGOT,
+            Materials.VOID_INGOT, null, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, null, Materials.VOID_INGOT
+        }, 256, 1, outputs.toArray(new Material[0])).energyPerTick(360000).register(plugin);
     }
 
 }
