@@ -505,6 +505,8 @@ public final class Machines {
             new SlimefunItemStack(SlimefunItems.ZINC_INGOT, 64),
             new SlimefunItemStack(SlimefunItems.TIN_INGOT, 64),
             new SlimefunItemStack(SlimefunItems.ALUMINUM_INGOT, 64),
+            new ItemStack(Material.IRON_INGOT, 64),
+            new ItemStack(Material.GOLD_INGOT, 64),
             new SlimefunItemStack(SlimefunItems.LEAD_INGOT, 64),
             new SlimefunItemStack(SlimefunItems.SILVER_INGOT, 64),
             new SlimefunItemStack(SlimefunItems.MAGNESIUM_INGOT, 64)
