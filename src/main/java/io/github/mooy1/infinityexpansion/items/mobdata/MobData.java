@@ -59,6 +59,8 @@ public final class MobData {
 
     public static final SlimefunItemStack WITCH = MobDataCard.create("Witch", MobDataTier.ADVANCED);
     public static final SlimefunItemStack ZOMBIE = MobDataCard.create("Zombie", MobDataTier.HOSTILE);
+    //恶魂
+    public static final SlimefunItemStack GHAST = MobDataCard.create("GHAST", MobDataTier.HOSTILE);
     public static final SlimefunItemStack SPIDER = MobDataCard.create("Spider", MobDataTier.HOSTILE);
     public static final SlimefunItemStack SKELETON = MobDataCard.create("Skeleton", MobDataTier.HOSTILE);
     public static final SlimefunItemStack CREEPER = MobDataCard.create("Creeper", MobDataTier.HOSTILE);
@@ -102,6 +104,12 @@ public final class MobData {
                 new ItemStack(Material.IRON_INGOT, 64), EMPTY_DATA_CARD, new ItemStack(Material.IRON_INGOT, 64),
                 new ItemStack(Material.CARROT, 64), new ItemStack(Material.ROTTEN_FLESH, 16), new ItemStack(Material.POTATO, 64)
         }).addDrop(Material.ROTTEN_FLESH, 1).register(plugin);
+        //恶魂
+        new MobDataCard(GHAST, MobDataTier.HOSTILE, new ItemStack[] {
+                new ItemStack(Material.GHAST_TEAR, 16), new ItemStack(Material.IRON_BLOCK, 16), new ItemStack(Material.GHAST_TEAR, 16),
+                new ItemStack(Material.IRON_INGOT, 64), EMPTY_DATA_CARD, new ItemStack(Material.IRON_INGOT, 64),
+                new ItemStack(Material.FIRE_CHARGE, 64), new ItemStack(Material.GHAST_TEAR, 16), new ItemStack(Material.FIRE_CHARGE, 64)
+        }).addDrop(Material.GHAST_TEAR, 1).register(plugin);
         new MobDataCard(SLIME, MobDataTier.NEUTRAL, new ItemStack[] {
                 new ItemStack(Material.SLIME_BLOCK, 16), new ItemStack(Material.LIME_DYE, 16), new ItemStack(Material.SLIME_BLOCK, 16),
                 new ItemStack(Material.LIME_DYE, 16), EMPTY_DATA_CARD, new ItemStack(Material.LIME_DYE, 16),
