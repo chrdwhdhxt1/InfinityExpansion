@@ -226,10 +226,10 @@ public final class Gear {
         }).register(plugin);
         new InfinityMatrix(Groups.INFINITY_CHEAT, INFINITY_MATRIX, InfinityWorkbench.TYPE, new ItemStack[] {
                 Materials.INFINITY_SINGULARITY, null, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, null, Materials.INFINITY_SINGULARITY,
-                Materials.INFINITY_SINGULARITY, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.INFINITY_SINGULARITY,
-                Materials.INFINITY_SINGULARITY, Materials.VOID_INGOT, new ItemStack(Material.ELYTRA), new ItemStack(Material.ELYTRA), Materials.VOID_INGOT, Materials.INFINITY_SINGULARITY,
-                Materials.INFINITY_SINGULARITY, Materials.VOID_INGOT, Materials.INFINITY_SINGULARITY, Materials.INFINITY_SINGULARITY, Materials.VOID_INGOT, Materials.INFINITY_SINGULARITY,
-                Materials.INFINITY_SINGULARITY, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.INFINITY_SINGULARITY,
+                Materials.INFINITY_SINGULARITY, Materials.VOID_SINGULARITY, Materials.VOID_SINGULARITY, Materials.VOID_SINGULARITY, Materials.VOID_SINGULARITY, Materials.INFINITY_SINGULARITY,
+                Materials.INFINITY_SINGULARITY, Materials.VOID_SINGULARITY, new ItemStack(Material.ELYTRA), new ItemStack(Material.ELYTRA), Materials.VOID_SINGULARITY, Materials.INFINITY_SINGULARITY,
+                Materials.INFINITY_SINGULARITY, Materials.VOID_SINGULARITY, Materials.INFINITY_SINGULARITY, Materials.INFINITY_SINGULARITY, Materials.VOID_SINGULARITY, Materials.INFINITY_SINGULARITY,
+                Materials.INFINITY_SINGULARITY, Materials.VOID_SINGULARITY, Materials.VOID_SINGULARITY, Materials.VOID_SINGULARITY, Materials.VOID_SINGULARITY, Materials.INFINITY_SINGULARITY,
                 Materials.INFINITY_SINGULARITY, null, Materials.INFINITY_SINGULARITY, Materials.INFINITY_SINGULARITY, null, Materials.INFINITY_SINGULARITY
         }).register(plugin);
         new VeinMinerRune(Groups.MAIN_MATERIALS, VEIN_MINER_RUNE, RecipeType.MAGIC_WORKBENCH, new ItemStack[] {

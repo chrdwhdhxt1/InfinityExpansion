@@ -252,6 +252,14 @@ public final class Materials {
             Material.SMOOTH_QUARTZ,
             "&b无尽奇点"
     );
+    public static final SlimefunItemStack VOID_SINGULARITY = new SlimefunItemStack(
+        "VOID_SINGULARITY",
+        Material.COAL_BLOCK,
+        "&b虚空奇点",
+        "&2我与史山无尽不共戴天",
+        "",
+        "&3魔改材料"
+    );
     public static final SlimefunItemStack BASIC_STRAINER = new SlimefunItemStack(
             "BASIC_STRAINER",
             Material.FISHING_ROD,
@@ -393,6 +401,7 @@ public final class Materials {
         new Singularity(LAPIS_SINGULARITY, Material.LAPIS_LAZULI, 1500).register(plugin);
         new Singularity(QUARTZ_SINGULARITY, Material.QUARTZ, 1500).register(plugin);
         new Singularity(INFINITY_SINGULARITY, INFINITE_INGOT, 100).register(plugin);
+        new Singularity(VOID_SINGULARITY, VOID_INGOT, 2700).register(plugin);
     }
 
     private static void registerEnhanced(SlimefunItemStack item, ItemStack[] recipe) {
