@@ -262,6 +262,17 @@ public final class Machines {
             MachineLore.speed(64),
             MachineLore.energyPerSecond(12000)
     );
+    public static final SlimefunItemStack INFINITE_HARVESTER = new SlimefunItemStack(
+        "INFINITE_HARVESTER",
+        Material.IRON_BLOCK,
+        "&b无尽&8收集者",
+        "&7从宇宙中收集&8无尽锭",
+        "",
+        "&2不是哥们",
+        "&2你真做出来了是吧",
+        MachineLore.speed(16),
+        MachineLore.energyPerSecond(500000)
+    );
     public static final SlimefunItemStack SUPER_INFINITE_VOID_HARVESTER = new SlimefunItemStack(
         "SUPER_INFINITE_VOID_HARVESTER",
         Material.CRYING_OBSIDIAN,
@@ -304,6 +315,15 @@ public final class Machines {
                 Materials.MAGNONIUM, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.MAGNONIUM,
                 Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE
         }, 64).energyPerTick(12000).register(plugin);
+        new Harvester(Groups.INFINITY_CHEAT, INFINITE_HARVESTER, InfinityWorkbench.TYPE, new ItemStack[] {
+            Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE,
+            Materials.MAGNONIUM, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.MAGNONIUM,
+            Materials.MAGNONIUM, Materials.VOID_INGOT, Materials.INFINITE_CIRCUIT, Materials.INFINITE_CIRCUIT, Materials.VOID_INGOT, Materials.MAGNONIUM,
+            Materials.MAGNONIUM, Materials.VOID_INGOT, Materials.INFINITY_SCORE, INFINITE_VOID_HARVESTER, Materials.VOID_INGOT, Materials.MAGNONIUM,
+            Materials.MAGNONIUM, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.MAGNONIUM,
+            Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE
+        }, 16).energyPerTick(500000).register(plugin);
+
         new VoidHarvester(Groups.INFINITY_CHEAT, SUPER_INFINITE_VOID_HARVESTER, InfinityWorkbench.TYPE, new ItemStack[] {
             Materials.MACHINE_CORE, Materials.MACHINE_CORE, Materials.MACHINE_CORE, Materials.MACHINE_CORE, Materials.MACHINE_CORE, Materials.MACHINE_CORE,
             Materials.MAGNONIUM, Materials.VOID_INGOT, Materials.INFINITE_CORE, Materials.INFINITE_CORE, Materials.VOID_INGOT, Materials.MAGNONIUM,

@@ -182,8 +182,7 @@ public final class Quarries {
                 Materials.VOID_INGOT, null, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, null, Materials.VOID_INGOT
         }, 64, 1, outputs.toArray(new Material[0])).energyPerTick(36000).register(plugin);
 
-        //史山无尽 无敌了
-        //磨粉抄的代码
+
         new Quarry(Groups.INFINITY_CHEAT, SUPER_INFINITY_QUARRY, InfinityWorkbench.TYPE, new ItemStack[] {
             null, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, null,
             Materials.MACHINE_PLATE, Gear.PICKAXE, Materials.INFINITE_CIRCUIT, Materials.INFINITE_CIRCUIT, Gear.PICKAXE, Materials.MACHINE_PLATE,

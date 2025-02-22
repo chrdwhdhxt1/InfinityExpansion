@@ -183,7 +183,7 @@ public final class MobData {
         }).addDrop(Material.NETHER_STAR, 1).addDrop(SlimefunItems.COMPRESSED_CARBON, 8, 2).register(plugin);
         new MobDataCard(ENDER_DRAGON, MobDataTier.BOSS, new ItemStack[] {
                 new ItemStack(Material.END_CRYSTAL, 64), new SlimefunItemStack(Materials.VOID_INGOT, 32), new ItemStack(Material.CHORUS_FLOWER, 64),
-                SlimefunItems.INFUSED_ELYTRA, EMPTY_DATA_CARD, new ItemStack(Material.INFINITE_MACHINE_CIRCUIT, 8),
+                SlimefunItems.INFUSED_ELYTRA, EMPTY_DATA_CARD, new SlimefunItemStack(Materials.INFINITE_INGOT, 32),
                 new SlimefunItemStack(SlimefunItems.ENDER_LUMP_3, 64), new SlimefunItemStack(Materials.VOID_SINGULARITY, 2), new ItemStack(Material.DRAGON_BREATH, 64)
         }).addDrop(Materials.VOID_DUST, 1).addDrop(Materials.ENDER_ESSENCE, 4).addDrop(Material.DRAGON_EGG, 1_000_000).register(plugin);
         new MobDataCard(BEE, MobDataTier.NEUTRAL, new ItemStack[] {

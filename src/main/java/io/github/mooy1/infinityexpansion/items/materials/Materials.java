@@ -260,8 +260,8 @@ public final class Materials {
         "",
         "&3魔改材料"
     );
-    public static final SlimefunItemStack INFINITY_CORE = new SlimefunItemStack(
-        "INFINITY_CORE",
+    public static final SlimefunItemStack INFINITY_SCORE = new SlimefunItemStack(
+        "INFINITY_SCORE",
         Material.DIAMOND_BLOCK,
         "&b无尽核心",
         "&2无尽科技的巅峰之作",
@@ -410,7 +410,7 @@ public final class Materials {
         new Singularity(QUARTZ_SINGULARITY, Material.QUARTZ, 1500).register(plugin);
         new Singularity(INFINITY_SINGULARITY, INFINITE_INGOT, 100).register(plugin);
         new Singularity(VOID_SINGULARITY, VOID_INGOT, 2700).register(plugin);
-        new Singularity(INFINITY_CORE,INFINITY_SINGULARITY , 100).register(plugin);
+        new Singularity(INFINITY_SCORE,INFINITY_SINGULARITY , 100).register(plugin);
     }
 
     private static void registerEnhanced(SlimefunItemStack item, ItemStack[] recipe) {

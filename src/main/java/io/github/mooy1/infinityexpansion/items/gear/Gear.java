@@ -225,12 +225,12 @@ public final class Gear {
                 Materials.VOID_INGOT, null, null, null, null, null
         }).register(plugin);
         new InfinityMatrix(Groups.INFINITY_CHEAT, INFINITY_MATRIX, InfinityWorkbench.TYPE, new ItemStack[] {
-                Materials.INFINITY_SINGULARITY, null, Materials.INFINITY_CORE, Materials.INFINITY_CORE, null, Materials.INFINITY_SINGULARITY,
+                Materials.INFINITY_SINGULARITY, null, Materials.INFINITY_SCORE, Materials.INFINITY_SCORE, null, Materials.INFINITY_SINGULARITY,
                 Materials.INFINITY_SINGULARITY, Materials.VOID_SINGULARITY, Materials.VOID_SINGULARITY, Materials.VOID_SINGULARITY, Materials.VOID_SINGULARITY, Materials.INFINITY_SINGULARITY,
                 Materials.INFINITY_SINGULARITY, Materials.VOID_SINGULARITY, new ItemStack(Material.ELYTRA), new ItemStack(Material.ELYTRA), Materials.VOID_SINGULARITY, Materials.INFINITY_SINGULARITY,
                 Materials.INFINITY_SINGULARITY, Materials.VOID_SINGULARITY, Materials.INFINITY_SINGULARITY, Materials.INFINITY_SINGULARITY, Materials.VOID_SINGULARITY, Materials.INFINITY_SINGULARITY,
                 Materials.INFINITY_SINGULARITY, Materials.VOID_SINGULARITY, Materials.VOID_SINGULARITY, Materials.VOID_SINGULARITY, Materials.VOID_SINGULARITY, Materials.INFINITY_SINGULARITY,
-                Materials.INFINITY_SINGULARITY, null, Materials.INFINITY_CORE, Materials.INFINITY_CORE, null, Materials.INFINITY_SINGULARITY
+                Materials.INFINITY_SINGULARITY, null, Materials.INFINITY_SCORE, Materials.INFINITY_SCORE, null, Materials.INFINITY_SINGULARITY
         }).register(plugin);
         new VeinMinerRune(Groups.MAIN_MATERIALS, VEIN_MINER_RUNE, RecipeType.MAGIC_WORKBENCH, new ItemStack[] {
                 Materials.MAGSTEEL_PLATE, SlimefunItems.PICKAXE_OF_VEIN_MINING, Materials.MAGSTEEL_PLATE,
